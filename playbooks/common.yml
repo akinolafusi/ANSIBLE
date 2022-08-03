@@ -9,7 +9,7 @@
       apt:
         update_cache: yes
     - name: ensure wireshark is at the latest version
-      yum:
+      apt:
         name: wireshark
         state: latest
 
