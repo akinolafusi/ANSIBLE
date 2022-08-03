@@ -1,0 +1,25 @@
+---
+- name: update web
+  hosts: webservers
+  remote_user: ubuntu
+  become: true
+  become_user: root
+  tasks:
+    - name: ensure wireshark is at the latest version
+      yum:
+        name: wireshark
+        state: latest
+
+# - name: update LB server
+#   hosts: lb
+#   remote_user: ubuntu
+#   become: true
+#   become_user: root
+#   tasks:
+#     - name: Update apt repo
+#       apt: 
+#         update_cache: yes
+
+    - name: Update apt repo
+      apt:
+        update_cache: yes
