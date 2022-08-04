@@ -1,0 +1,2 @@
+[uat]
+54.209.251.40 ansible_ssh_user='ec2-user' ansible_ssh_common_args='-o StrictHostKeyChecking=no'
