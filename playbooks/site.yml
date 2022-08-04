@@ -1,0 +1,3 @@
+---
+- hosts: web
+- import_playbook: ../static-assignments/common.yml
