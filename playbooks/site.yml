@@ -1,3 +1,6 @@
 ---
-- hosts: web
-- import_playbook: ../static-assignments/common.yml
+# - hosts: web
+# - import_playbook: ../static-assignments/common.yml
+
+- hosts: uat
+- import_playbook: ../static-assignments/uat.yml
